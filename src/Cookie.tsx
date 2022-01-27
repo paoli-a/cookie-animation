@@ -1,3 +1,5 @@
+import styles from "./Cookie.module.css";
+
 function Cookie() {
   return (
     <svg
@@ -6,6 +8,7 @@ function Cookie() {
       viewBox="0 0 132 132"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={styles.cookie}
     >
       <g id="cookies-svgrepo-com 1" clip-path="url(#clip0_450_67)">
         <g id="Cookie">

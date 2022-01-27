@@ -6,6 +6,14 @@ function App() {
     <>
       <div className={styles.cookieContainer}>
         <Cookie />
+        <div className={styles.text}>
+          <h2 className={styles.cookieTitle}>Cookie Policy</h2>
+          <p className={styles.cookieDescription}>
+            We use analytial cookies (yum) to make your experience on this
+            website better.
+          </p>
+          <button>Ok, got it!</button>
+        </div>
       </div>
     </>
   );
