@@ -3,7 +3,7 @@ import Cookie from "./Cookie";
 
 function App() {
   return (
-    <>
+    <div className={styles.mainContainer}>
       <div className={styles.cookieContainer}>
         <Cookie />
         <div className={styles.text}>
@@ -15,7 +15,7 @@ function App() {
           <button>Ok, got it!</button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
