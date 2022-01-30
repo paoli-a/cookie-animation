@@ -3,9 +3,9 @@ import styles from "./Cookie.module.css";
 function Cookie() {
   return (
     <svg
-      width="132"
-      height="132"
-      viewBox="0 0 132 132"
+      width="98"
+      height="98"
+      viewBox="0 0 98 98"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={styles.cookie}
@@ -174,7 +174,7 @@ function Cookie() {
             fill="#C98850"
           />
         </g>
-        <g id="Crumbs">
+        <g id="crumbs">
           <g id="Group_6">
             <path
               id="Vector_31"
@@ -206,11 +206,6 @@ function Cookie() {
           </g>
         </g>
       </g>
-      <defs>
-        <clipPath id="clip0_450_67">
-          <rect width="132" height="132" fill="white" />
-        </clipPath>
-      </defs>
     </svg>
   );
 }

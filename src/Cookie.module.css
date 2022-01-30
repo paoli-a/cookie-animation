@@ -1,3 +1,5 @@
 .cookie {
   margin-right: 2rem;
+  overflow: visible;
+  transform: scale(0.65);
 }

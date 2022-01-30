@@ -7,7 +7,6 @@ function App() {
   const mainContainerRef = useRef<HTMLDivElement>(null);
   const q = gsap.utils.selector(mainContainerRef);
   const timeline = useRef<GSAPTimeline>();
-  console.log("timeline.current ", timeline.current);
   const [animationDone, setAnimationDone] = useState<boolean>(false);
 
   useEffect(function animatePopup() {
@@ -30,8 +29,23 @@ function App() {
         { opacity: 0, x: 30 },
         { opacity: 1, x: 0 },
         "<"
-      );
+      )
+      .fromTo(
+        q("#cookie"),
+        { y: 0, rotation: "0deg" },
+        { y: -17, rotation: "-20deg", yoyo: true, repeat: -1 }
+      )
+      .fromTo(q("#crumbs"), { y: 0 }, { y: -17, yoyo: true, repeat: -1 }, "<");
   }, []);
+
+  function handleClick() {
+    gsap.to(q(`.${styles.cookieContainer}`), {
+      opacity: 0,
+      y: 100,
+      duration: 0.75,
+      ease: "power1.out",
+    });
+  }
 
   return (
     <div className={styles.mainContainer} ref={mainContainerRef}>
@@ -47,7 +61,7 @@ function App() {
             We use analytial cookies (yum) to make your experience on this
             website better.
           </p>
-          <button>Ok, got it!</button>
+          <button onClick={handleClick}>Ok, got it!</button>
         </div>
       </div>
     </div>
