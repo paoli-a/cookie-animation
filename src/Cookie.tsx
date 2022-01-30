@@ -9,8 +9,9 @@ function Cookie() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={styles.cookie}
+      id="cookie"
     >
-      <g id="cookies-svgrepo-com 1" clip-path="url(#clip0_450_67)">
+      <g id="cookies-svgrepo-com 1" clipPath="url(#clip0_450_67)">
         <g id="Cookie">
           <path
             id="Vector"
