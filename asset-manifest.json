@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cookie-animation/static/css/main.f3743d59.css",
+    "main.js": "/cookie-animation/static/js/main.43cc2947.js",
+    "static/js/787.cc76ee42.chunk.js": "/cookie-animation/static/js/787.cc76ee42.chunk.js",
+    "index.html": "/cookie-animation/index.html",
+    "main.f3743d59.css.map": "/cookie-animation/static/css/main.f3743d59.css.map",
+    "main.43cc2947.js.map": "/cookie-animation/static/js/main.43cc2947.js.map",
+    "787.cc76ee42.chunk.js.map": "/cookie-animation/static/js/787.cc76ee42.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3743d59.css",
+    "static/js/main.43cc2947.js"
+  ]
+}
