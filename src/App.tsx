@@ -36,7 +36,7 @@ function App() {
         { y: -17, rotation: "-20deg", yoyo: true, repeat: -1 }
       )
       .fromTo(q("#crumbs"), { y: 0 }, { y: -17, yoyo: true, repeat: -1 }, "<");
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   function handleClick() {
     gsap.to(q(`.${styles.cookieContainer}`), {
