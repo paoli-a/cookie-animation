@@ -1,0 +1,30 @@
+name: Quality checks
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+env:
+  CI: true
+
+jobs:
+  lint_and_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - name: Install dependencies
+        run: yarn install
+      - name: Run eslint
+        run: yarn lint
+      - name: Run typescript
+        run: yarn type-check
+      - name: Run unit tests
+        run: yarn test
+      - name: Run build to make sure it doesn't crash
+        run: yarn build
